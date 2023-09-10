@@ -1,0 +1,168 @@
+@font-face {
+    font-family: names;
+    src: url(./fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: subs;
+    src: url(./fonts/Teko-Regular.ttf);
+}
+
+html{
+    display: flex;
+}
+
+
+.main-container {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.right{
+    display: flex;
+    flex-basis: 25%;
+}
+
+
+.sub-left-top,.sub-left-bottom{
+    display: flex;
+    flex-basis: 50%;
+}
+
+
+.card {
+    display: flex;
+    margin: 15px;
+    padding : 30px;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: white;
+    box-shadow: 0px 0px 10px #1c18289e;
+    border-radius: 15px;
+    color : white;
+    flex-direction: column;
+}
+
+.first-card {
+    flex-basis: 60%;
+    background-color: #8a00ca;
+}
+
+.second-card{
+    flex-basis: 40%;
+    background-color: #49516b ;
+}
+
+.third-card {
+    flex-basis: 40%;
+    background-color: #ffffff;
+}
+
+.fourth-card {
+    flex-basis: 60%;
+    background-color: #1b1e2f;
+}
+
+.fifth-card {
+    flex-basis: 100%;
+    background-color: #ffffff;
+}
+
+
+.people-info {
+    display: flex;
+}
+
+.people-brief {
+    height: 50px;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.people-name{
+    font-family: names;
+}
+
+.verify-graduated{
+    font-family: subs;
+    color: #ffffff80;
+}
+
+
+.third-card .people-name,
+.fifth-card .people-name{
+    color: #1b1e2f;
+}
+
+.third-card .verify-graduated,
+.fifth-card .verify-graduated{
+    color: #1b1e2f77;
+}
+
+.people-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #ffffff;
+    border-width: 5px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+
+p {
+    color: #ffffffc3;
+}
+
+.third-card > h3,.fifth-card > h3 {
+    color: #1b1e2f;
+}
+
+
+.third-card > p,.fifth-card > p {
+    color: #1b1e2fa9;
+}
+
+.inspiration , a{
+    margin-top: 50px;
+    color: #49516b70;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+a:hover {
+    color: #8a00ca;
+    transform: scale(1.02);
+}
+
+
+@media (max-width : 1000px) {
+    .main-container{
+        flex-direction: column;
+    }
+    .sub-left-top,.sub-left-bottom{
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+    }
+
+    
+}
